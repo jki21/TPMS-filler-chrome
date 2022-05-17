@@ -1,0 +1,22 @@
+{
+    "name": "TPMS Filler",
+    "description": "Auto fill TPMS!",
+    "version": "0.1",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icon/ic_fluent_table_edit_16_regular.png",
+            "32": "icon/ic_fluent_table_edit_16_regular.png",
+            "48": "icon/ic_fluent_table_edit_24_regular.png",
+            "128": "icon/ic_fluent_table_edit_24_regular.png"
+        },
+        "default_title": "Auto fill TPMS"
+      }
+}
