@@ -5,7 +5,7 @@ function fillTimeSheet() {
     }
 
     function getCalendarDays() {
-        return [...innerDoc.querySelectorAll("tr.heading td.sunday,tr.heading td.monday")].map(e => {
+        return [...innerDoc.querySelectorAll("tr.heading#projectSection td.sunday, tr.heading#projectSection td.monday, tr.heading#projectSection td.today")].map(e => {
             return {
                 isWorkDay: e.className !== "sunday"
             }
