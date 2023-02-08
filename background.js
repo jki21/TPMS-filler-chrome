@@ -1,5 +1,5 @@
 function fillTimeSheet() {
-    const innerDoc = document.getElementsByTagName("frame")[1].contentDocument.getElementsByTagName("frame")[2].contentDocument;
+    const innerDoc = document.getElementById("bottomFrame").contentDocument.getElementsByName("mainFrame")[0].contentDocument;
     function findProjectHours() {
         return [...innerDoc.querySelectorAll("#alcDetail.summary")].map(lbl => lbl.innerText.split(" ")[1]);
     }
